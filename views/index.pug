@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 Has my password been breached?
+  p On this website you can test if the entered password appeared in a breach.
+  
+  form(onsubmit='checkPassword(); return false;')
+    input(type='password' name='password' id='password' placeholder='Enter a password to test')
+    input(type='button' value='Check' onclick='checkPassword()')
+
+  div(id='result')
+
+  p This page uses the PwnedPasswords files, offered through 
+    a(href="https://haveibeenpwned.com/Passwords") HaveIBeenPwned
+    |  by 
+    a(href="https://www.troyhunt.com") Troy Hunt
+    | . Check if your e-mail has appeared in a breach @ 
+    a(href="https://haveibeenpwned.com/") HaveIBeenPwned
+
+block bottomjs
+  script(src='javascripts/sha1.min.js')
+  script(src='javascripts/script.js')

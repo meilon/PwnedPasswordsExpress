@@ -1,0 +1,2 @@
+Get a copy of Troy Hunts PwnedPassword files from https://haveibeenpwned.com/Passwords
+Parse them with ParsePwnedPasswordFile.ps1 (https://gist.github.com/meilon/d034ccf366d28343bf47ef59891acbaa) and put the files into this folder
